@@ -1,0 +1,19 @@
+<p>first works!</p>
+
+<button (click)="getPosts()">Get Posts</button>
+
+<button (click)="postPosts()">Post Posts</button>
+
+
+
+<ul *ngFor="let post of allPosts">
+    <li>{{post.id}} {{post.title}} {{post.body}}</li>
+</ul>
+
+<button (click)="deletePost()">Delete Posts</button>
+updated list after delete.
+<button (click)="getPosts()">Get Posts</button>
+
+<ul *ngFor="let post of allPosts">
+    <li>{{post.id}} {{post.title}} {{post.body}}</li>
+</ul>

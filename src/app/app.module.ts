@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
+import { JobcheckPerosalBioComponent } from './jobcheck-perosal-bio/jobcheck-perosal-bio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FirstComponent
+    FirstComponent,
+    JobcheckPerosalBioComponent
   ],
   imports: [
     BrowserModule,

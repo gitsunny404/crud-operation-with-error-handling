@@ -12,7 +12,7 @@ export class JobcheckPerosalBioComponent {
 
   newuser : PersonalModal = {
     name: "Sunny Kumar",
-    email: "mailsunny404+30@gmail.com",
+    email: "mailsunny404+61@gmail.com",
     gender : "MALE",
     dateOfBirth: new Date('2002-02-21'),
     city: "Bengalore",

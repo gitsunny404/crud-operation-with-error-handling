@@ -5,20 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { HttpClientModule } from '@angular/common/http'
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { JobcheckPerosalBioComponent } from './jobcheck-perosal-bio/jobcheck-perosal-bio.component';
+import { JobcheckReactiveFormComponent } from './jobcheck-reactive-form/jobcheck-reactive-form.component';
+import { ModalDataShareComponent } from './modal-data-share/modal-data-share.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    JobcheckPerosalBioComponent
+    JobcheckPerosalBioComponent,
+    JobcheckReactiveFormComponent,
+    ModalDataShareComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,19 +6,12 @@
       "body": "Body 1"
     },
     {
-      "id": 5,
-      "title": "Title 1",
-      "body": "Body 1"
-    },
-    {
-      "id": 7,
-      "title": "Title 1",
-      "body": "Body 1"
-    },
-    {
-      "id": 9,
-      "title": "Title 1",
-      "body": "Body 1"
+      "name": "Sunny kumar",
+      "email": "mailsunny404+68@gmail.com",
+      "gender": "Male",
+      "dob": "2023-03-08",
+      "city": "Delhi",
+      "id": 5
     }
   ],
   "comments": [],

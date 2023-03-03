@@ -1,0 +1,57 @@
+<h3>Jobcheck Reactive Form</h3>
+
+<form [formGroup]="myForm" (ngSubmit)="submitForm()">
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" class="form-control" placeholder="Enter Name" formControlName="name">
+    <div *ngIf="name?.invalid && (name?.dirty || name?.touched)" class="text-danger">
+      <div *ngIf="name?.errors?.['required']">Name is required</div>
+      <div *ngIf="name?.errors?.['pattern']">Invalid name format (only alphabetical characters and spaces allowed)</div>
+    </div>
+  </div>
+  <button type="submit" [disabled]="myForm.invalid">Submit Post Data</button>
+</form> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3>Jobcheck Reactive Form</h3>
+
+<form [formGroup]="myForm" (ngSubmit)="submitForm()">
+    <label>Name :</label>
+    <input type="text" placeholder="Enter Name" formControlName="name"><br>
+
+    <label>Email :</label>
+    <input type="email" placeholder="Enter Email" formControlName="email"><br>
+
+    <label>Gender :</label>
+    <input type="text" placeholder="Enter Gender" formControlName="gender"><br>
+
+    <label>DOB</label>
+    <input type="date" formControlName="dateOfBirth" placeholder="dateOfBirth"><br>
+
+    <label>City</label>
+    <input type="text" placeholder="Enter City" formControlName="city"><br>
+
+    <button type="submit" [disabled]="myForm.invalid">Submit Post Data</button>
+</form>
+
+{{errorMessage}}
